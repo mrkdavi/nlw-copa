@@ -24,7 +24,6 @@ export async function authRoutes(fastify: FastifyInstance) {
     });
     
     const userData = await userReponse.json();
-    console.log(userData);
     
     const userInfoSchema = z.object({
       sub: z.string(),
